@@ -1,0 +1,55 @@
+.header {
+  height: 95vh;
+  margin-top: 3rem;
+  position: relative;
+
+  //  Background
+  background-image: linear-gradient(
+      to right bottom,
+      #05193794,
+      #00416594,
+      #006d7d94,
+      #00987794,
+      #71be5e94
+    ),
+    url(../img/header-img.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 0;
+    right: 20rem;
+    height: 20rem;
+    width: 3rem;
+
+    &--img {
+      height: inherit;
+    }
+  }
+
+  &__text-box {
+    height: 20rem;
+    width: auto;
+    margin-left: 9rem;
+    position: absolute;
+    top: 16rem;
+
+    &--main {
+      animation: left-appear 0.6s ease-out;
+    }
+
+    &--sec {
+      animation: right-appear 0.8s ease-out;
+    }
+
+    &--tert {
+      animation: top-appear 2s ease 1s;
+      animation-fill-mode: backwards;
+      position: relative;
+      top: -0.8rem;
+      opacity: 0.5;
+    }
+  }
+}

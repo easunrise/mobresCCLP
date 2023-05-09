@@ -1,0 +1,28 @@
+.section-test {
+  height: 95vh;
+}
+.row {
+  margin: 0 auto;
+  width: $grid-width;
+  display: flex;
+
+  [class^='col-'] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $grid-gutter;
+    }
+  }
+
+  & > * {
+    display: inline-block;
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$grid-gutter}) / 4);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$grid-gutter}) / 3);
+  }
+}

@@ -1,0 +1,121 @@
+.u-margin-bottom-medium {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 0.4rem;
+}
+
+.u-margin-left-small {
+  margin-left: 1.2rem;
+}
+
+.u-margin-top-small {
+  margin-top: 0.6rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+.u-margin-top-large {
+  margin-top: 10rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 30rem;
+}
+
+.u-padding-top-huge {
+  margin-top: 30rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.inline-override {
+  display: inline-block;
+}
+
+.hide-display {
+  opacity: 0;
+}
+
+.no-display {
+  display: none;
+}
+
+.position-relative-bypass {
+  position: relative;
+  top: 20rem;
+}
+.position-relative-override {
+  position: relative;
+  top: 10rem;
+}
+.position-relative {
+  position: relative;
+}
+
+.u-position-down {
+  margin-top: 1.8rem;
+}
+.u-position-down-further {
+  margin-top: 4rem;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.z-index-default {
+  z-index: 50;
+}
+.z-index-override {
+  z-index: 100 !important;
+}
+
+.dissapear-card {
+  display: none;
+}
+
+.font-size-fit {
+  font-size: 2.2rem;
+}
+.font-size-fit-small {
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.font-size-fit-fit {
+  letter-spacing: 1px;
+  font-size: 1.8rem !important;
+}
+
+.width-override {
+  width: 30rem;
+}
+
+.u-move-up {
+  margin-top: -3rem;
+}
+
+.u-width-fill {
+  width: 100%;
+}
+
+.white-space {
+  height: 14rem;
+}
+
+.u-font-size-color-override {
+  font-size: 2.6rem !important;
+  letter-spacing: 3px;
+  color: $color-soft-black;
+}

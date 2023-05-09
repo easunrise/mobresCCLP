@@ -1,0 +1,353 @@
+.section-about {
+  height: 110vh;
+  background-color: $color-light-grey-1;
+  margin-top: -8rem;
+  margin-bottom: 10rem;
+  text-align: center;
+
+  &__heading {
+    margin-top: 16rem;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
+
+.section-coffee-selection {
+  height: 200vh;
+  background: linear-gradient(
+      to right bottom,
+
+      #004165c4,
+      #006d7dc4,
+      #009877c4
+    ),
+    url(../img/coffee-bean-bg.jpg);
+  background-size: cover;
+  margin-top: -8rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  transform: skewY(-3deg);
+  margin-top: -14rem;
+
+  & > * {
+    transform: skewY(3deg);
+  }
+
+  &__header {
+    position: relative;
+    top: 8rem;
+  }
+}
+
+.section-contact {
+  height: 90rem;
+  background: linear-gradient(
+      to right bottom,
+
+      #004165c4,
+      #006d7dc4,
+      #009877c4
+    ),
+    url(../img/contact/oman-bg.jpg);
+
+  background-size: cover;
+
+  transform: skewY(-3deg);
+  margin-top: -14rem;
+  text-align: center;
+
+  & > * {
+    transform: skewY(3deg);
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    height: 55rem;
+
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+    &__btn {
+      padding: 6px;
+      font-size: 4rem;
+      text-align: center;
+      &:hover {
+        transform: scale(1.2);
+        color: $color-dark-blue;
+        text-shadow: 2px 2px 10px #000000dd;
+      }
+    }
+
+    &__info {
+      height: 80%;
+      width: 30%;
+
+      background-color: rgba(239, 243, 242, 0.726);
+      box-shadow: 0 2px 1.8rem rgba(0, 0, 0, 0.611);
+      border-radius: 4px;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &--img {
+        border-radius: 4px;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+        background-image: url(../img/contact/contact-page.jpg);
+        background-size: cover;
+        transition: all 0.4s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &--about {
+        width: 60%;
+
+        &-header {
+          margin-top: 5.6rem;
+          margin-bottom: 1rem;
+          transition: all 0.3s;
+          letter-spacing: 8px;
+          font-size: 3.2rem;
+
+          color: #0a133e;
+
+          &:hover {
+            transform: skewX(-20deg);
+          }
+
+          &-sub {
+            margin-top: 2rem;
+            color: $color-blue-primary !important;
+          }
+        }
+
+        &-description {
+          padding-bottom: 2rem;
+          border-bottom: 2px solid #608598a5;
+          letter-spacing: 5px;
+
+          color: $color-soft-white;
+        }
+
+        &-list {
+          font-size: 1.8rem;
+          list-style: none;
+          font-weight: 800;
+          letter-spacing: 5px;
+          color: $color-soft-white;
+
+          margin-top: 1.2rem;
+
+          &-item {
+            margin-bottom: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-stores {
+  height: 130vh;
+
+  margin-top: -14rem;
+
+  &__container {
+    height: 80%;
+    width: 100%;
+    position: relative;
+  }
+
+  .stores-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    &__header {
+      margin-top: 12rem;
+      text-align: center;
+      margin-bottom: 5rem;
+
+      &--content {
+        color: $color-soft-black;
+        font-size: 3.8rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+      }
+    }
+
+    &__list {
+      margin-top: 2rem;
+      height: 60rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &--btn-link {
+        transition: all 1.2s;
+        font-size: 3rem;
+        &:hover {
+          cursor: pointer;
+
+          .btn-icon {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      &--item {
+        width: 70rem;
+        height: 20rem;
+        margin-bottom: 3rem;
+        transform: skewX(-10deg);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        background: $color-dark-blue;
+        opacity: 0.85;
+
+        & > * {
+          transform: skewX(10deg);
+        }
+
+        &-btn {
+          position: absolute;
+          background-color: white;
+          transform: skewX(0deg) !important;
+          z-index: 200;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+
+          &-link {
+            &:hover {
+              cursor: pointer;
+              background-color: green;
+            }
+          }
+        }
+
+        &-img {
+          width: 10rem;
+          height: 10rem;
+          opacity: 0.95;
+          border-radius: 120px;
+
+          &-lpp {
+            background-image: url(../img/logos/lpp.jpg);
+            background-size: cover;
+          }
+
+          &-minis {
+            background-image: url(../img/logos/minis.png);
+            opacity: 1 !important;
+            background-size: cover;
+          }
+
+          &-mycafe {
+            background-image: url(../img/logos/mycafe.png);
+
+            background-size: cover;
+          }
+
+          &-syria {
+            background-image: url(../img/logos/syria.png);
+
+            background-size: cover;
+          }
+        }
+
+        &-text {
+          color: #ffffffda;
+          font-size: 1.4rem;
+          letter-spacing: 4px;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+.section-footer {
+  height: 60vh;
+  width: 100%;
+  background-color: $color-dark-blue;
+  margin-top: -6rem;
+  margin-bottom: 3rem;
+
+  position: relative;
+
+  .footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &-header {
+      color: white;
+      font-size: 2.8rem;
+      letter-spacing: 8px;
+      margin-top: -4rem;
+      margin-bottom: 8rem;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__creator {
+      &--header {
+        color: $color-soft-white;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
+
+        &-sub {
+          font-size: 1.6rem;
+          color: $color-soft-white;
+        }
+      }
+    }
+
+    &__menu {
+      height: 10rem;
+
+      display: flex;
+      justify-content: space-between;
+      &--link {
+        scroll-behavior: smooth;
+        &-item {
+          text-decoration: none;
+          color: $color-soft-white;
+          font-size: 2rem;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+
+          &:hover {
+            font-size: 2.2rem;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}
