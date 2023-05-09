@@ -404,7 +404,7 @@ body {
   height: 95vh;
   margin-top: 3rem;
   position: relative;
-  background-image: linear-gradient(to right bottom, #05193794, #00416594, #006d7d94, #00987794, #71be5e94), url(../img/header-img.jpg);
+  background-image: linear-gradient(to right bottom, #05193794, #00416594, #006d7d94, #00987794, #71be5e94), url(../img/header-img-resize.jpg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%); }
