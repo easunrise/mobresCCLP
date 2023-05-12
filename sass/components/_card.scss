@@ -1,10 +1,23 @@
 .card {
   height: 34rem;
+  width: 25rem;
   // background-color: $color-soft-white;
   border-radius: 3px;
   box-shadow: 0.6px 0.6px 10px rgba($color-soft-black, 0.6);
   transition: all 0.4s;
 
+  @include respond(tab-land) {
+    width: 50rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 35vh;
+  }
+  @include respond(tab-port) {
+    width: 50rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 30vh;
+  }
   &:hover {
     transform: scale(1.1);
   }

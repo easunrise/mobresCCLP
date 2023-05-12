@@ -3,6 +3,10 @@
   margin-top: 3rem;
   position: relative;
 
+  @include respond(tab-port) {
+    height: 65vh;
+  }
+
   //  Background
   background-image: linear-gradient(
       to right bottom,
@@ -24,6 +28,12 @@
     height: 20rem;
     width: 3rem;
 
+    @include respond(tab-port) {
+      right: 12rem;
+      height: 15rem;
+      width: 3rem;
+    }
+
     &--img {
       height: inherit;
     }
@@ -37,15 +47,15 @@
     top: 16rem;
 
     &--main {
-      animation: left-appear 0.6s ease-out;
+      animation: left-appear 1.2s ease-out 2s;
     }
 
     &--sec {
-      animation: right-appear 0.8s ease-out;
+      animation: right-appear 1.4s ease-out 2s;
     }
 
     &--tert {
-      animation: top-appear 2s ease 1s;
+      animation: top-appear 2.4s ease 1s;
       animation-fill-mode: backwards;
       position: relative;
       top: -0.8rem;

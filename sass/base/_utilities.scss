@@ -52,6 +52,12 @@
 .position-relative-bypass {
   position: relative;
   top: 20rem;
+
+  @include respond(tab-land) {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+  }
 }
 .position-relative-override {
   position: relative;
@@ -118,4 +124,59 @@
   font-size: 2.6rem !important;
   letter-spacing: 3px;
   color: $color-soft-black;
+}
+
+.card-display__abs--2 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 50rem;
+  }
+}
+.card-display__abs--3 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 100rem;
+  }
+}
+.card-display__abs--4 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 150rem;
+  }
+}
+.card-display__abs--5 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 140rem;
+  }
+}
+.card-display__abs--6 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 190rem;
+  }
+}
+.card-display__abs--7 {
+  @include respond(tab-land) {
+    position: absolute;
+    top: 240rem;
+  }
+}
+
+.u-position-adjust {
+  @include respond(tab-land) {
+    position: relative;
+    top: -55rem;
+    right: 3rem;
+  }
+}
+
+.flex-override-1800 {
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    max-width: 60vw;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: auto;
+  }
 }

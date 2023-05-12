@@ -9,6 +9,16 @@ body {
   text-shadow: 2px 2px 5rem $color-dark-blue;
   letter-spacing: 1.4rem;
   display: block;
+
+  @include respond(tab-port) {
+    margin-left: -2rem !important;
+  }
+
+  @include respond(phone) {
+    margin-top: 10rem;
+    letter-spacing: 0.6rem;
+    margin-left: -3rem !important;
+  }
 }
 
 .heading-tertiary {
@@ -16,6 +26,14 @@ body {
   color: $color-dark-blue;
   text-shadow: 2px 2px 5rem $color-dark-blue;
   letter-spacing: 0.4rem;
+
+  @include respond(tab-port) {
+    display: none !important;
+    letter-spacing: 0.2rem;
+  }
+  @include respond(phone) {
+    margin-left: -3rem !important;
+  }
 }
 
 .heading-secondary {
@@ -23,6 +41,16 @@ body {
   color: $color-white;
   text-shadow: 2px 2px 5rem $color-dark-blue;
   letter-spacing: 0.9rem;
+
+  @include respond(tab-port) {
+    margin-left: 30rem !important;
+    letter-spacing: 0.6rem;
+  }
+
+  @include respond(phone) {
+    margin-left: 25rem !important;
+    top: -4rem !important;
+  }
 }
 
 // General Headings

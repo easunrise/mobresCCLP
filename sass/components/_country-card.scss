@@ -60,12 +60,17 @@
 
 .country-card {
   height: 40rem;
+  width: 34rem;
   background-color: rgba($color-soft-white, 0.98);
   position: relative;
   overflow: hidden;
   border-radius: 3px;
   box-shadow: 1px 1px 8px $color-soft-black;
   transition: all 0.4s;
+
+  @include respond(tab-land) {
+    width: 50vw;
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -188,6 +193,10 @@
     &--container {
       list-style: none;
       padding-top: 5.6rem;
+
+      @include respond(tab-port) {
+        margin-top: 2.4rem;
+      }
     }
 
     &--item {
@@ -205,6 +214,10 @@
         margin-left: 10px;
         font-weight: 800;
         color: black;
+      }
+
+      @include respond(tab-port) {
+        padding-bottom: 0.2rem;
       }
 
       &:not(:last-child) {
